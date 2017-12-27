@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>jQuery - Domaci zadatak - Srna Radic</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <div class="container-fluid headerStyle">
+      <header>
+        <h1>Galerija</h1>
+      </header>
+    </div>
+
+
+
+<div class="container">
+      <div class="row">
+
+        <div class="container">
+          <nav class="clearfix">
+            <ul class="list-reset">
+
+              <li data-filter="all">Sve</li>
+              <li data-filter=".webdesign">Web dizajn</li>
+              <li data-filter=".illustration">Ilustracija</li>
+              <li data-filter=".photo">Fotografija</li>
+
+
+            </ul>
+          </nav>
+        </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix webdesign">
+    <img src="img/01-webdesign-4.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration">
+    <img src="img/02-illustration-1.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix photo">
+    <img src="img/03-photo-2.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration">
+    <img src="img/04-illustration-5.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix webdesign">
+    <img src="img/05-webdesign-2.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration">
+    <img src="img/06-illustration-6.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix photo">
+    <img src="img/07-photo-1.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix webdesign">
+    <img src="img/08-webdesign-3.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix photo">
+    <img src="img/09-photo-3.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration">
+    <img src="img/10-illustration-3.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix webdesign">
+    <img src="img/11-webdesign-1.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration">
+    <img src="img/12-illustration-4.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix webdesign">
+    <img src="img/13-webdesign-5.jpg" class="img-responsive">
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration">
+    <img src="img/14-illustration-2.jpg" class="img-responsive">
+  </div>
+
+
+
+
+
+
+
+      </div> <!--row end-->
+    </div><!--container end-->
+
+<!--
+    <div class="container-fluid footerStyle">
+        <small>Srna Radic - jQuery</small>
+    </div>
+-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="mixitup-3/dist/mixitup.min.js"></script>
+    <script type="text/javascript">
+      var mixer = mixitup('.container');
+      var mixer = mixitup(containerEl);
+      var mixer = mixitup(containerEl, {
+    selectors: {
+        target: '.blog-item'
+    },
+
+    animation: {
+        effects: 'fade scale(0.1)'
+    }
+});
+    </script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
