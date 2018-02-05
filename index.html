@@ -22,7 +22,7 @@
   <body>
     <div class="container-fluid headerStyle">
       <header>
-        <h1>Galerija</h1>
+        <h1>Galerija slika</h1>
       </header>
     </div>
 
@@ -30,42 +30,38 @@
 
 <div class="container">
       <div class="row">
-
         <div class="container">
           <nav class="clearfix">
             <ul class="list-reset">
-
-              <li data-filter="all">Sve</li>
-              <li data-filter=".webdesign">Web dizajn</li>
-              <li data-filter=".illustration">Ilustracija</li>
-              <li data-filter=".photo">Fotografija</li>
-
-
+              <li data-filter="all" id="all">Sve</li>
+              <li data-filter=".webdesign" id="webdesign">Web dizajn</li>
+              <li data-filter=".illustration" id="illustration">Ilustracija</li>
+              <li data-filter=".photo" id="photo">Fotografija</li>
             </ul>
           </nav>
         </div>
 
-  <div class="col-lg-3 col-md-4 col-sm-6 mix webdesign">
+  <div class="col-lg-3 col-md-4 col-sm-6 mix webdesign centering">
     <img src="img/01-webdesign-4.jpg" class="img-responsive">
   </div>
 
-  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration">
+  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration centering">
     <img src="img/02-illustration-1.jpg" class="img-responsive">
   </div>
 
-  <div class="col-lg-3 col-md-4 col-sm-6 mix photo">
+  <div class="col-lg-3 col-md-4 col-sm-6 mix photo centering">
     <img src="img/03-photo-2.jpg" class="img-responsive">
   </div>
 
-  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration">
+  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration centering">
     <img src="img/04-illustration-5.jpg" class="img-responsive">
   </div>
 
-  <div class="col-lg-3 col-md-4 col-sm-6 mix webdesign">
+  <div class="col-lg-3 col-md-4 col-sm-6 mix webdesign centering">
     <img src="img/05-webdesign-2.jpg" class="img-responsive">
   </div>
 
-  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration">
+  <div class="col-lg-3 col-md-4 col-sm-6 mix illustration centering">
     <img src="img/06-illustration-6.jpg" class="img-responsive">
   </div>
 
@@ -110,27 +106,28 @@
       </div> <!--row end-->
     </div><!--container end-->
 
-<!--
-    <div class="container-fluid footerStyle">
-        <small>Srna Radic - jQuery</small>
-    </div>
--->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="mixitup-3/dist/mixitup.min.js"></script>
-    <script type="text/javascript">
-      var mixer = mixitup('.container');
-      var mixer = mixitup(containerEl);
-      var mixer = mixitup(containerEl, {
+    <script>
+
+      var mixer = mixitup('.container', {
+
     selectors: {
-        target: '.blog-item'
+        target: '.mix'
     },
 
-    animation: {
-        effects: 'fade scale(0.1)'
+      "animation": {
+        "duration": 1000,
+        "nudge": false,
+        "reverseOut": false,
+        "effects": "scale(0.1)"
     }
+
 });
+
     </script>
+
     <script src="js/main.js"></script>
 
   </body>

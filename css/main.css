@@ -68,28 +68,3 @@ a:hover {
   color: #000;
   font-weight: bold;
 }
-
-
-@media all and (max-width:768px) {
-nav ul li {
-  width: 50%;
-}
-
-.centering {
-    margin: auto;
-    width: 100%;
-}
-
-}
-
-@media all and (min-width:992px) {
-
-
-
-  }
-
-@media all and (min-width:1200px) {
-  nav ul li {
-    width: 25%;
-  }
-}
